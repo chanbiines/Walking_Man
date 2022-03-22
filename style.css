@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.animation{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('road.jpg'),
+                      url('road.jpg'),
+                      url('road.jpg');
+    background-size:100vw 100%;
+    animation: animate 20s linear infinite;                  
+}
+@keyframes animate{
+    100%{
+        background-position: 300vw 0px,
+                             200vw 0px,
+                             100vw 0px;
+    }  
+}
+
+.man{
+    position: absolute;
+    height: 40%;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%);
+
+}
